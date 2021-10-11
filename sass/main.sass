@@ -1,0 +1,90 @@
+*
+    margin: 0
+    padding: 0
+.screen
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    background: rgb(238,174,202)
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+.calcbody
+    position: absolute
+    background-color: white
+    border: 1px solid black
+    border-radius: 15px
+    width: 90vw
+    height: 60vh
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    overflow: hidden
+    box-shadow: 4px 3px 8px 1px #969696
+.calcscreen
+    height: 20%
+    background-color: #2E3134
+    color: white
+    border-bottom: 1px solid black
+    width: 100%
+    display: flex
+    justify-content: end
+    align-items: center
+.calcscreen .value
+    margin-right: 6%
+    font-weight: bold
+    font-size: 35px
+.calckeys 
+    height: 80%
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+.calckeys div
+    background-color: gray
+    border-right: 1px solid black
+    border-bottom: 1px solid black
+    flex-basis: 22%
+    flex-grow: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 3px
+    font-size: 30px
+    text-align: center
+.wh
+    background-color: white!important
+.or
+    background-color: orange!important
+.cl1
+    border-right: 0px solid black!important
+    justify-content: end!important
+.cl2
+    border-left: 0px solid black!important
+    justify-content: start!important
+.top1
+    border-top: 1px solid orange!important
+    border-bottom: 1px solid orange !important
+.bot1
+    border-bottom: 1px solid orange !important
+.top2
+    align-items: end !important
+@media ( min-width: 400px)
+    .calcbody
+        width: 70vw
+        height: 60vh
+@media ( min-width: 600px)
+    .calcbody
+        width: 50vw
+        height: 60vh
+@media ( min-width: 800px)
+    .calcbody
+        width: 60vw
+        height: 70vh
+@media ( min-width: 1200px)
+    .calcbody
+        width: 40vw
+        height: 70vh
+@media ( min-width: 1400px)
+    .calcbody
+        width: 30vw
+        height: 60vh
+    
+    
