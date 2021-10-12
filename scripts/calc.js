@@ -4,7 +4,11 @@ loading()
 let actRequest;
 
 function calcit(fn) {
-    return new Function('return ' + fn)();
+    try {
+    return new Function('return ' + fn)()}
+    catch {
+        alert("3RR0R");
+    }
 }
 
 document.querySelector('.calckeys').addEventListener('click', (e) => {
@@ -24,6 +28,6 @@ document.querySelector('.calckeys').addEventListener('click', (e) => {
         answer.textContent = ""
     }
     else if(e.target.closest('div').classList.contains('get')) {
-        answer.textContent = calcit(answer.textContent)
+        answer.textContent = calcit(answer.textContent) 
     }
     })
